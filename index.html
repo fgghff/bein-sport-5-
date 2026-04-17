@@ -1,314 +1,182 @@
 <!DOCTYPE html>
-
-<html lang="ar">
-
+<html lang="ar" dir="rtl">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تقرير حقوق الإنسان والديمقراطية</title>
 
-  <meta charset="UTF-8">
+<style>
+@page { size: A4; margin: 20mm; }
 
-  <title>JWPlayer DRM Setup - MPD Only</title>
+body{
+  font-family: Tahoma, Arial, sans-serif;
+  line-height:1.9;
+  margin:0;
+  background:#f4f6f9;
+  counter-reset: page;
+}
 
-  <script src="https://content.jwplatform.com/libraries/Z79JsmAO.js"></script>
+.page{
+  width:210mm;
+  min-height:297mm;
+  margin:20px auto;
+  background:#fff;
+  padding:30mm 20mm 20mm;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  position:relative;
+  page-break-after:always;
+}
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.7.1/showdown.min.js"></script>
+.page:last-child{page-break-after:auto;}
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+.header{
+  position:absolute;
+  top:10mm;
+  left:20mm;
+  right:20mm;
+  text-align:center;
+  font-size:14px;
+  color:#555;
+}
 
-  <script src="https://developer-tools.jwplayer.com/js/tools.min.js"></script>
+.footer{
+  position:absolute;
+  bottom:10mm;
+  left:20mm;
+  right:20mm;
+  text-align:center;
+  font-size:12px;
+  color:#777;
+}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+.footer::after{
+  counter-increment: page;
+  content: "الصفحة " counter(page);
+}
 
-  <!-- ربط مكتبة Font Awesome -->
+h1{color:#0b3d91}
+h2{color:#333}
+.cover{text-align:center; margin-top:80px}
+p{text-align:justify}
+ul{padding-right:20px}
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <style>
-
-    html, body { 
-
-      margin: 0; 
-
-      padding: 0; 
-
-      height: 100%; 
-
-      overflow: hidden; 
-
-      background-color: #000;
-
-      font-family: 'Cairo', sans-serif;
-
-    }
-
-    .jwplayer { position: relative; width: 100%; height: 100%; }
-
-    .jwplayer .jw-media video { width: 100%; height: 100%; object-fit: fill; }
-
-  </style>
+@media print{
+  .page{margin:0; box-shadow:none}
+  body{background:#fff}
+}
+</style>
 
 </head>
-
 <body>
 
-  <!-- منطقة عرض المشغل -->
+<!-- الصفحة الأولى -->
+<div class="page cover">
+<div class="header">جامعة تكريت - كلية علوم الحاسوب والرياضيات</div>
+
+<h1>جامعة تكريت</h1>
+<h2>كلية علوم الحاسوب والرياضيات</h2>
+<h3>قسم الأمن السيبراني / صباحي</h3>
+
+<br><br>
+<h1>تقرير بعنوان</h1>
+<h2>حقوق الإنسان والديمقراطية</h2>
+
+<br><br><br>
+<p><strong>اسم الطالب:</strong> عبدالله احمد مطلك</p>
+
+<div class="footer"></div>
+</div>
+
+<!-- الصفحة الثانية -->
+<div class="page">
+<div class="header">حقوق الإنسان والديمقراطية</div>
+
+<h2>المقدمة</h2>
+<p>
+تُعد حقوق الإنسان والديمقراطية من أهم الأسس التي تقوم عليها المجتمعات الحديثة، حيث تسعى الدول إلى تحقيق العدالة والمساواة وضمان الحريات الأساسية لجميع الأفراد. ولا يمكن تحقيق الاستقرار والتقدم دون احترام كرامة الإنسان وحماية حقوقه.
+</p>
+
+<h2>أولاً: مفهوم حقوق الإنسان</h2>
+<p>
+حقوق الإنسان هي مجموعة من الحقوق الأساسية التي يمتلكها كل إنسان بمجرد كونه إنساناً، وهي حقوق عالمية لا يجوز التنازل عنها أو التمييز فيها.
+</p>
+
+<ul>
+<li>الحق في الحياة والحرية</li>
+<li>الحقوق السياسية والمشاركة في الحكم</li>
+<li>الحقوق الاقتصادية والاجتماعية</li>
+</ul>
+
+<div class="footer"></div>
+</div>
+
+<!-- الصفحة الثالثة -->
+<div class="page">
+<div class="header">حقوق الإنسان والديمقراطية</div>
+
+<h2>ثانياً: مفهوم الديمقراطية</h2>
+<p>
+الديمقراطية هي نظام حكم يقوم على مشاركة الشعب في اتخاذ القرارات، سواء بشكل مباشر أو عن طريق ممثلين منتخبين، وتهدف إلى تحقيق العدالة والمساواة.
+</p>
+
+<ul>
+<li>سيادة القانون</li>
+<li>الفصل بين السلطات</li>
+<li>احترام حقوق الإنسان</li>
+<li>تداول السلطة سلمياً</li>
+</ul>
+
+<h2>ثالثاً: العلاقة بين حقوق الإنسان والديمقراطية</h2>
+<p>
+توجد علاقة تكاملية بين حقوق الإنسان والديمقراطية، حيث تضمن الديمقراطية حماية الحقوق، بينما تعزز حقوق الإنسان نجاح النظام الديمقراطي واستمراره.
+</p>
+
+<div class="footer"></div>
+</div>
+
+<!-- الصفحة الرابعة -->
+<div class="page">
+<div class="header">حقوق الإنسان والديمقراطية</div>
+
+<h2>أهمية حقوق الإنسان والديمقراطية</h2>
+<ul>
+<li>تحقيق العدالة والمساواة</li>
+<li>حماية كرامة الإنسان</li>
+<li>تعزيز الاستقرار السياسي</li>
+<li>دعم التنمية</li>
+<li>تقوية العلاقة بين المواطن والدولة</li>
+</ul>
+
+<h2>التحديات</h2>
+<ul>
+<li>الاستبداد السياسي</li>
+<li>الفساد</li>
+<li>الحروب والنزاعات</li>
+<li>ضعف الوعي المجتمعي</li>
+</ul>
+
+<div class="footer"></div>
+</div>
+
+<!-- الصفحة الخامسة -->
+<div class="page">
+<div class="header">حقوق الإنسان والديمقراطية</div>
+
+<h2>دور الأمن السيبراني</h2>
+<p>
+يلعب الأمن السيبراني دوراً مهماً في حماية حقوق الإنسان في العصر الرقمي، من خلال حماية البيانات الشخصية ومنع الاختراقات وضمان الخصوصية.
+</p>
+
+<h2>الخاتمة</h2>
+<p>
+في الختام، تُعد حقوق الإنسان والديمقراطية أساس بناء مجتمع عادل ومتقدم، ويتطلب تحقيقهما تعاون الدولة والمجتمع معاً، إضافة إلى الاستفادة من التكنولوجيا بشكل إيجابي.
+</p>
 
-  <div id="my-jwplayer"></div>
+<hr>
+<p><strong>انتهى التقرير</strong></p>
 
-  
+<div class="footer"></div>
+</div>
 
-  <script>
-
-    // تعريف متغير حالة التمدد
-
-    let isExpanded = false;
-
-    
-
-    // رمز SVG لزر التمدد
-
-    const expandSvg = `<svg fill="#7f8c8d" version="1.1" id="expand_icon" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 100 100" xml:space="preserve">
-
-      <g>
-
-        <path d="M22.661,20.5H36c1.104,0,2-0.896,2-2s-0.896-2-2-2H19c-1.104,0-2.5,1.276-2.5,2.381v17c0,1.104,0.896,2,2,2s2-0.896,2-2V24.876l16.042,15.791c0.391,0.391,1.027,0.586,1.539,0.586s1.086-0.195,1.477-0.586c0.781-0.781,0.812-2.237,0.031-3.019L22.661,20.5z"/>
-
-        <path d="M83,16.5H66c-1.104,0-2,0.896-2,2s0.896,2,2,2h12.605L61.647,37.648c-0.781,0.781-0.781,2.142,0,2.923c0.39,0.391,0.902,0.633,1.414,0.633s0.774-0.171,1.164-0.562l16.274-16.5v11.738c0,1.104,0.896,2,2,2s2-0.896,2-2v-17C84.5,17.776,84.104,16.5,83,16.5z"/>
-
-        <path d="M36.542,60.962L20.5,76.754V65.881c0-1.104-0.896-2-2-2s-2,0.896-2,2v17c0,1.104,1.396,1.619,2.5,1.619h17c1.104,0,2-0.896,2-2s-0.896-2-2-2H22.529L39.62,63.6c0.781-0.781,0.656-1.951-0.125-2.732C38.715,60.086,37.322,60.181,36.542,60.962z"/>
-
-        <path d="M82.5,63.881c-1.104,0-2,0.896-2,2v11.606L64.226,60.962c-0.78-0.781-1.923-0.781-2.703,0c-0.781,0.781-0.719,1.856,0.062,2.638l17.152,16.9H66c-1.104,0-2,0.896-2,2s0.896,2,2,2h17c1.104,0,1.5-0.515,1.5-1.619v-17C84.5,64.776,83.604,63.881,82.5,63.881z"/>
-
-      </g>
-
-    </svg>`;
-
-    
-
-    // دالة تهيئة المشغل مع إعدادات DRM
-
-    function setupPlayer(drmType = 'clearkey') {
-
-      const playerConfig = {
-
-        file: "https://todtv-live-spo-prod.akamaized.net/Content/Channel/svc-spo-hd-12-dt/DASH/playlist.mpd?hdnts=st=1742491101~exp=1742667501~acl=*/Content/Channel/svc-spo-hd-12-dt/DASH/*~id=9DJC2AMWXMT8~data=aXA9MTU2LjE3OC4zMi40Ng~hmac=1134fd3625e2e1599e2e23c2985ba747375b57a54a8403ad624fa6217d2a4743",
-
-        width: "100%",
-
-        height: "100%",
-
-        autostart: true,
-
-        mute: true,
-
-        skin: {
-
-          name: "seven",
-
-          active: "#9b8d8d",
-
-          inactive: "#7f8c8d",
-
-          background: "#1e1e1e"
-
-        },
-
-        ui: {
-
-          controlbar: {
-
-            children: [
-
-              'playButton',
-
-              'previousButton',
-
-              'nextButton',
-
-              'timeSlider',
-
-              'currentTimeDisplay',
-
-              'durationDisplay',
-
-              'muteButton',
-
-              'volumeButton',
-
-              'captionsButton',
-
-              'qualityButton',
-
-              'playbackRateButton',
-
-              'settingsButton',
-
-              'shareButton',
-
-              'expandButton',
-
-              'fullscreenButton'
-
-            ]
-
-          }
-
-        }
-
-      };
-
-      
-
-      if (drmType === 'clearkey') {
-
-        playerConfig.drm = {
-
-          clearkey: {
-
-            keyId: "4358b2e38e973281b6f6970e95cd13de",
-
-            key: "6c687cf562a83f6f611731b4646ff584"
-
-          }
-
-        };
-
-      } else if (drmType === 'clearKeys') {
-
-        playerConfig.drm = {
-
-          clearKeys: {
-
-            "4358b2e38e973281b6f6970e95cd13de": "6c687cf562a83f6f611731b4646ff584"
-
-          }
-
-        };
-
-      }
-
-      
-
-      return jwplayer("my-jwplayer").setup(playerConfig);
-
-    }
-
-    
-
-    // التهيئة الأولية للمشغل
-
-    var player = setupPlayer('clearkey');
-
-    
-
-    // إضافة زر التمدد إلى شريط التحكم
-
-    player.addButton(
-
-      expandSvg,
-
-      'تمدد الفيديو',
-
-      function() { toggleExpand(); },
-
-      'expandButton'
-
-    );
-
-    
-
-    function toggleExpand() {
-
-      const videoElement = document.querySelector("#my-jwplayer video");
-
-      if (!videoElement) return;
-
-      videoElement.style.objectFit = isExpanded ? 'fill' : 'contain';
-
-      isExpanded = !isExpanded;
-
-      updateExpandButtonTooltip();
-
-    }
-
-    
-
-    function updateExpandButtonTooltip() {
-
-      const button = document.querySelector('.jw-expandButton');
-
-      if (button) {
-
-        button.setAttribute('aria-label', isExpanded ? 'تصغير الفيديو' : 'تمدد الفيديو');
-
-      }
-
-    }
-
-    
-
-  //  window.onload = function() {
-
-  //    const videoElement = document.querySelector('#my-jwplayer video');
-
-  //    if (videoElement) { videoElement.style.objectFit = 'fill'; }
-
-  //    const soundToggleButton = document.createElement('button');
-
-  //    soundToggleButton.id = 'sound-toggle';
-
-   //   soundToggleButton.innerHTML = '<i class="fas fa-volume-mute"></i> تفعيل الصوت';
-
-   //   document.body.appendChild(soundToggleButton);
-
-      
-
-   //   soundToggleButton.addEventListener('click', function() {
-
-   //     const currentMute = player.getMute();
-
-   //     player.setMute(!currentMute);
-
-   //     soundToggleButton.innerHTML = !currentMute 
-
-    //      ? '<i class="fas fa-volume-mute"></i> تفعيل الصوت'
-
-   //       : '<i class="fas fa-volume-up"></i> كتم الصوت';
-
-  //    });
-
-   // };
-
-    
-
-    player.on('pause', function() { player.play(); });
-
-    
-
-    window.addEventListener("beforeunload", function () { player.stop(); });
-
-    document.addEventListener("visibilitychange", function() {
-
-      if (document.hidden) { player.stop(); }
-
-    });
-
-    
-
-    player.on('error', function(error) {
-
-      console.error("فشلت طريقة clearkey (" + error.message + ")، سيتم استخدام clearKeys كخطة بديلة");
-
-      jwplayer("my-jwplayer").remove();
-
-      player = setupPlayer('clearKeys');
-
-      player.addButton(expandSvg, 'تمدد الفيديو', function() { toggleExpand(); }, 'expandButton');
-
-    });
-
-  </script>
-
-<script src="https://www.drv.tw/inc/wd.js?s=kwcmfsyk8gjgzexem2p2cq"></script></body>
-
-</html>
-
+</body>
+  </html>
